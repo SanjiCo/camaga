@@ -194,6 +194,33 @@ h2 {
     #difficulty-buttons.desktop-only {
         display: none;
     }
+
+    #start-button.mobile-only {
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    #start-game-button {
+        background-color: #3498db;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1rem;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    #start-game-button:hover {
+        background-color: #2980b9;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    #start-game-button:active {
+        transform: translateY(0);
+    }
 }
 
 /* Yeni animasyon ekle */
@@ -218,4 +245,32 @@ h2 {
 
 .card.matched .back {
     transform: rotateY(0deg) !important; /* Arka yüzün düzgün görünmesini sağla */
+}
+
+/* Mobil cihazlarda "Başla" butonunu göster */
+#start-button.mobile-only {
+    display: block; /* Mobilde göster */
+    margin-bottom: 15px;
+}
+
+#start-game-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#start-game-button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+#start-game-button:active {
+    transform: translateY(0);
 }

@@ -226,3 +226,8 @@ function toggleMute() {
 
     isMuted = !isMuted;
 }
+
+document.getElementById('start-game-button').addEventListener('click', () => {
+    difficulty = 'easy'; // Kolay modda başla
+    startGame();
+});
