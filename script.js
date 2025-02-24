@@ -18,6 +18,11 @@ function setDifficulty(level) {
 }
 
 function startGame() {
+    // Mobil cihazlarda otomatik olarak kolay modda başla
+    if (window.innerWidth <= 600) {
+        difficulty = 'easy';
+    }
+
     // Zorluk butonlarını gizle
     const difficultyButtons = document.getElementById('difficulty-buttons');
     difficultyButtons.style.display = 'none';

@@ -190,6 +190,10 @@ h2 {
     #volume-slider {
         width: 60px;
     }
+
+    #difficulty-buttons.desktop-only {
+        display: none;
+    }
 }
 
 /* Yeni animasyon ekle */
